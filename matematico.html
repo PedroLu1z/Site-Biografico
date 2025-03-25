@@ -1,65 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Biográfico - Matemático</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
+
 <body>
     <main>
-        <section>
-            <figure>
-                <img src="img/matrizes.webp" alt="James Joseph Sylvester">
-                <figcaption>James Joseph Sylvester, matemático inglês</figcaption>
-            </figure>
-            <h1>Quem foi James Joseph Sylvester?</h1>
-            <p>James Joseph Sylvester foi um matemático inglês que contribui fundamentalmente no desenvolvimento da teoria matricial. Desempenhou papel
-                fundamental no desenvolvimento da matemática nos Estados Unidos na segunda metade do século XIX.
-            </p>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+                <img src="img/logo-unip.png" class="navbar-brand" width="200px" height="100px" alt="Logo UNIP">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: #fff;" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #fff;" href="fisico.html">SCRUM</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Quem foi James Joseph Sylvester -->
+        <section class="container mt-5">
+            <div class="row align-items-center">
+                <!-- Imagem e legenda -->
+                <div class="col-md-4 text-center">
+                    <figure>
+                        <img src="img/matrizes.webp" alt="James Joseph Sylvester" class="img-fluid rounded shadow">
+                        <figcaption class="mt-2">James Joseph Sylvester, matemático inglês</figcaption>
+                    </figure>
+                </div>
 
-            <h2>O que é uma matriz?</h2>
-            <p>Matriz podemos definir como uma estrutura matemática que organiza dados e informações em linhas e colunas, como uma tabela. São muitos utilizados
-                em áreas do conhecimento, como a matemática, a informática e a gestão.
-            </p>
-            <p><b>Características:</b></p>
-            <ul>
-                <li>Os números que compõem uma matriz são chamados de elementos</li>
-                <li>Os elementos são identificados por colchetes, parênteses, barras simples ou barras duplas</li>
-                <li>As operações de adição, subtração e multiplicação são bem definidas</li>
-                <li>As matrizes são representadas da forma A mxn, onde M é o número de linhas e N é o número de colunas</li>
-                <li>Existem casos especiais de matrizes, como a matriz linha, a matriz coluna, a matriz quadrada, a matriz oposta e a matriz identidade</li>
-            </ul>
-
-            <p><b>Aplicações</b></p>
-            <ul>
-                <li>São utilizadas para acompanhar o progresso através de critérios, metas ou normas</li>
-                <li>São utilizadas para resolver problemas matemáticos de forma padronizada</li>
-                <li>São utilizadas para facilitar o trabalho com dados numéricos</li>
-                <li>São essenciais para o desenvolvimento da programação</li>
-            </ul>
-
-            <p><b>Tipos de Matrizes:</b></p>
-            <h4>Matriz identidade</h4>
-            <p> Uma matriz quadrada A = {a ij}nxm definida por A = {a ij}nxm, onde aij = 1 <-> i = j e aij = 0 <-> i != j é
-            denominada matriz identidade de ordem n</p>
-            <hr>
-            <h4>Matriz Quadrada</h4>
-            <p> o número de linhas é igual ao número de colunas</p>
-            <table>
-                <tr>
-                    <th>1,1</th>
-                    <th>1,2</th>
-                </tr>
-
-                <tr>
-                    <th>2,1</th>
-                    <th>2,2</th>
-                </tr>
-            </table>
-            <hr>
-            <h4>Igualdade de Matrizes</h4>
-            <p></p>
+                <!-- Texto -->
+                <div class="col-md-8">
+                    <h1>Quem foi James Joseph Sylvester?</h1>
+                    <p>James Joseph Sylvester foi um matemático inglês que contribuiu fundamentalmente no
+                        desenvolvimento da
+                        teoria matricial. Desempenhou papel
+                        essencial no avanço da matemática nos Estados Unidos na segunda metade do século XIX.</p>
+                </div>
+            </div>
         </section>
+
+        <!-- O que é uma matriz -->
+        <section class="container mt-5">
+            <div>
+                <h2>O que é uma matriz?</h2>
+                <p>Uma matriz pode ser definida como uma estrutura matemática que organiza dados e informações em linhas
+                    e
+                    colunas, semelhante a uma tabela. Elas são amplamente utilizadas em áreas como matemática,
+                    informática e
+                    gestão.</p>
+
+                <h4 class="mt-4">Características:</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Os números que compõem uma matriz são chamados de elementos.</li>
+                    <li class="list-group-item">Os elementos são identificados por colchetes, parênteses, barras simples
+                        ou barras duplas.</li>
+                    <li class="list-group-item">As operações de adição, subtração e multiplicação são bem definidas.
+                    </li>
+                    <li class="list-group-item">As matrizes são representadas da forma A<sub>m×n</sub>, onde m é o
+                        número de linhas e n o número de colunas.</li>
+                    <li class="list-group-item">Existem casos especiais de matrizes, como a matriz linha, a matriz
+                        coluna, a matriz quadrada, a matriz oposta e a matriz identidade.</li>
+                </ul>
+
+                <h4 class="mt-4">Aplicações:</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Acompanhar o progresso através de critérios, metas ou normas.</li>
+                    <li class="list-group-item">Resolver problemas matemáticos de forma padronizada.</li>
+                    <li class="list-group-item">Facilitar o trabalho com dados numéricos.</li>
+                    <li class="list-group-item">São essenciais para o desenvolvimento da programação.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Tipos de Matrizes -->
+        <section class="container mt-5">
+            <div>
+                <h2>Tipos de Matrizes:</h2>
+
+                <!-- Matriz Identidade -->
+                <div class="mt-4">
+                    <h4>Matriz Identidade</h4>
+                    <p>Uma matriz quadrada A = {a<sub>ij</sub>}<sub>n×m</sub> definida por:</p>
+                    <p><code>a<sub>ij</sub> = 1</code> se <code>i = j</code> e <code>a<sub>ij</sub> = 0</code> se
+                        <code>i ≠ j</code>.</p>
+                </div>
+
+                <hr>
+
+                <!-- Matriz Quadrada -->
+                <div class="mt-4">
+                    <h4>Matriz Quadrada</h4>
+                    <p>O número de linhas é igual ao número de colunas.</p>
+                    <table class="table table-bordered w-25 text-center">
+                        <tr>
+                            <td>1,1</td>
+                            <td>1,2</td>
+                        </tr>
+                        <tr>
+                            <td>2,1</td>
+                            <td>2,2</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <hr>
+
+                <!-- Igualdade de Matrizes -->
+                <div class="mt-4">
+                    <h4>Igualdade de Matrizes</h4>
+                    <p>Duas matrizes são consideradas iguais quando possuem as mesmas dimensões e seus elementos
+                        correspondentes
+                        são idênticos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-4 mt-5">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Sobre -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Sobre Matrizes</h5>
+                        <p>Entender matrizes é fundamental para áreas como matemática avançada, computação gráfica e
+                            análise de
+                            dados.</p>
+                    </div>
+
+                    <!-- Links Úteis -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Links Úteis</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none">O que são Matrizes?</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Tipos de Matrizes</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Aplicações Práticas</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Redes Sociais -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Nos Siga</h5>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+
+                </div>
+
+                <!-- Copyright -->
+                <div class="text-center mt-4">
+                    <p class="mb-0">&copy; 2025 Seu Site. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Font Awesome para os ícones -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     </main>
 </body>
+
 </html>

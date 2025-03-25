@@ -5,33 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Biográfico</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 
 <body>
     <main>
-        <nav>
-            <div>
-                <img src="img/logo-unip.png" alt="Logo UNIP" width="200px" height="120px">
-                <ul>
-                    <li><a href="fisico.html" target="_blank">Físico</a></li>
-                    <li><a href="matematico.html" target="_blank">Matemático</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+                <img src="img/logo-unip.png" class="navbar-brand" width="200px" height="100px" alt="Logo UNIP">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: #fff;" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #fff;" href="fisico.html">SCRUM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #fff;" href="matematico.html" >Matemático - Matrizes</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
         <section>
-            <h1><b>Site Biográfico - Construção e Pesquisa</b></h1>
-            <span>Curso - Sistemas de Informação - Programação Web Responsiva</span>
+            <div class="container">
+                <h1 class="text-center"><b>Site Biográfico - Construção e Pesquisa</b></h1>
+                <p>Site voltado para a exibição de Informações a respeito do conteúdo tratado nas matérias de IHC e Tópicos de Matemática Aplicada. Dentro desse projeto foi
+                    escolhido o SCRUM como tópico de IHC e Matrizes em Tópicos de Matemática Aplicada a ser detalhado e mostrado um pouco da história e principais Caracteristicas e 
+                    aplicabilidades no mercado.
+                </p>
+                <p>Agora os Integrantes do grupo que ajudaram a desenvolver esse projeto, contribuíndo com pesquisa, estilização e montagem da estrutura HTML</p>
 
-            <h2>Integrantes</h2>
-            <ul>
-                <li>Pedro Luiz Santiago Santana - H70CAD2</li>
-            </ul>
+                <h2>Integrantes</h2>
+                <ul>
+                    <li>Pedro Luiz Santiago Santana - H70CAD2</li>
+                </ul>
+            </div>
         </section>
 
         <footer>
-            &copy; UNIP - 2025 - Pedro Luiz Santiago - RA: H70CAD2
+            <div class="card-footer text-center">
+                &copy; UNIP - 2025 - Pedro Luiz Santiago - RA: H70CAD2 - Sistemas de Informação - Noite
+            </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </main>
 </body>
 

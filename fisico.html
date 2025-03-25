@@ -5,14 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Biográfico - SCRUM</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 
 <body>
     <main>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+                <img src="img/logo-unip.png" class="navbar-brand" width="200px" height="100px" alt="Logo UNIP">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: #fff;" aria-current="page"
+                                href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #fff;" href="matematico.html">Matemático -
+                                Matrizes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <!-- Descrição SCRUM -->
         <section>
-            <div>
-                <h1>Quem criou o SCRUM?</h1>
+            <div class="container mt-5">
+                <h1 class="text-center">Quem criou o SCRUM?</h1>
                 <p>O Scrum foi criado por <b>Jeff Sutherland</b> e <b>Ken Schwaber</b> no início dos anos 1990. Eles
                     desenvolveram
                     esse framework com base em práticas ágeis para melhorar a gestão e o desenvolvimento de software.
@@ -24,95 +46,178 @@
                     (Object-Oriented Programming, Systems, Languages & Applications) em 1995. Mais tarde, eles
                     publicaram o Guia do Scrum, que documenta as regras, papéis e eventos desse framework.</p>
 
-                <h2>O que é SCRUM?</h2>
-                <p>Scrum é um <b>framework ágil</b> usado para gerenciar e desenvolver projetos complexos, especialmente
-                    em
-                    áreas como desenvolvimento de software. Ele se baseia na colaboração, entrega incremental e
-                    adaptação contínua, ajudando as equipes a trabalharem juntas de forma organizada e eficiente.</p>
+                <div class="mt-5">
+                    <h2>O que é SCRUM?</h2>
+                    <p>Scrum é um <b>framework ágil</b> usado para gerenciar e desenvolver projetos complexos,
+                        especialmente
+                        em
+                        áreas como desenvolvimento de software. Ele se baseia na colaboração, entrega incremental e
+                        adaptação contínua, ajudando as equipes a trabalharem juntas de forma organizada e eficiente.
+                    </p>
+                </div>
             </div>
         </section>
 
         <!-- Quem é Jeff e Ken -->
         <section>
-            <div>
+            <div class="container mt-5">
                 <h1>Quem é Jeff Sutherland e Ken Schwaber?</h1>
-                <p>Jeff Sutherland é um ex-médico e piloto de caça da Força Aérea dos Estados Unidos que, nos anos 1980,
-                    migrou para a área de tecnologia, atuando em diversas empresas de software. Em 1993, com base em sua
-                    experiência em gestão e inspirado em práticas ágeis, ele criou o Scrum para melhorar a eficiência no
-                    desenvolvimento de software. Posteriormente, tornou-se coautor do Guia do Scrum e um dos principais
-                    defensores da metodologia ágil em todo o mundo.</p>
 
-                <!-- Foto Jeff -->
-                <p>Ken Schwaber é um especialista em desenvolvimento de software e gestão de projetos, com foco em
-                    aprimorar a eficiência das equipes. Em parceria com Jeff Sutherland, formalizou o Scrum e apresentou
-                    o framework oficialmente em 1995, na conferência OOPSLA. Ken também é o fundador da Scrum.org,
-                    organização dedicada a disseminar e certificar a prática do Scrum globalmente, consolidando-se como
-                    uma das principais referências no universo ágil.</p>
-                
-                <!-- Foto Ken -->
-                <img src="" alt="">
+                <div class="row align-items-center mb-4">
+                    <!-- Texto Jeff -->
+                    <div class="col-md-8">
+                        <p>Jeff Sutherland é um ex-médico e piloto de caça da Força Aérea dos Estados Unidos que, nos
+                            anos 1980,
+                            migrou para a área de tecnologia, atuando em diversas empresas de software. Em 1993, com
+                            base em sua
+                            experiência em gestão e inspirado em práticas ágeis, ele criou o Scrum para melhorar a
+                            eficiência no
+                            desenvolvimento de software. Posteriormente, tornou-se coautor do Guia do Scrum e um dos
+                            principais
+                            defensores da metodologia ágil em todo o mundo.</p>
+                    </div>
+                    <!-- Foto Jeff -->
+                    <div class="col-md-4 text-center">
+                        <img src="img/jeff.webp" class="img-fluid" alt="Jeff Sutherland">
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <!-- Foto Ken -->
+                    <div class="col-md-4 text-center">
+                        <img src="img/ken.jpg" class="img-fluid" alt="Ken Schwaber">
+                    </div>
+                    <!-- Texto Ken -->
+                    <div class="col-md-8">
+                        <p>Ken Schwaber é um especialista em desenvolvimento de software e gestão de projetos, com foco
+                            em
+                            aprimorar a eficiência das equipes. Em parceria com Jeff Sutherland, formalizou o Scrum e
+                            apresentou
+                            o framework oficialmente em 1995, na conferência OOPSLA. Ken também é o fundador da
+                            Scrum.org,
+                            organização dedicada a disseminar e certificar a prática do Scrum globalmente,
+                            consolidando-se como
+                            uma das principais referências no universo ágil.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Caracteristicas e Aplicabilidade -->
-        <section>
-            <div>
-                <h2>Principais Caracteristicas do SCRUM</h2>
-                <ul>
-                    <li>Interativo e incremental: O trabalho é dividio em ciclos curtos chamados <b>sprints</b>, que
-                        geralmente
-                        duram de 1 a 4 semanas. Ao final de cada sprint, uma parte funcional do projeto é entregue</li>
-                    <li>Transparência, Inspeção e Adaptação: O processo é transparente para todos, e a equipe revisa
-                        constantemente
-                        seu trabalho para se adaptar a novas necessidades
-                    </li>
-                    <li>Times Auto-organizados: As equipes tem autonomia para decidir como realizar o trabalho,
-                        aumentando a colaboração e responsabilidade</li>
-                </ul>
+        <section class="container mt-5">
+            <h1 class="text-center mb-5">SCRUM: Tudo que você precisa saber</h1>
 
-                <h3>Papeis no SCRUM</h3>
-                <ol>
-                    <li>Product Owner: Responsável por Definir e priorizar as funcionalidades do produto (backlog)</li>
-                    <li>Scrum Master: Garante que o Scrum está sendo aplicado corretamente e remove obstáculos para a
-                        equipe</li>
-                    <li>Time de Desenvolvimento: Grupo multifuncional que executa o trabalho e entrega os incrementos
-                    </li>
-                </ol>
+            <!-- Características do SCRUM -->
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card p-4 shadow-sm">
+                        <h2>Principais Características</h2>
+                        <ul>
+                            <li>🔄 <b>Iterativo e incremental:</b> Trabalho dividido em sprints curtos (1 a 4 semanas).
+                            </li>
+                            <li>👥 <b>Times Auto-organizados:</b> Autonomia para decidir como realizar o trabalho.</li>
+                            <li>🔍 <b>Transparência, Inspeção e Adaptação:</b> Revisões constantes para ajustes.</li>
+                        </ul>
+                    </div>
+                </div>
 
-                <h3>Eventos no SCRUM</h3>
-                <ol>
-                    <li>Sprint: Ciclo do trabalho onde a equipe desenvolve um incremento do produto</li>
-                    <li>Sprint Planning: Reunião para planejar o que será feito no sprint</li>
-                    <li>Daily Scrum: Reunião diária curta (15 minutos) para alinhar o progresso e discutir impedimentos
-                    </li>
-                    <li>Sprint review: Demonstração do que foi desenvolvido no sprint</li>
-                    <li>Sprint Retrospective: Reflexão sobre o que funcionou bem e o que pode melhorar no próximo ciclo
-                    </li>
-                </ol>
+                <!-- Papéis no SCRUM -->
+                <div class="col-md-6 mb-4">
+                    <div class="card p-4 shadow-sm">
+                        <h2>Papéis no SCRUM</h2>
+                        <ol>
+                            <li>📋 <b>Product Owner:</b> Prioriza as funcionalidades do produto.</li>
+                            <li>🧑‍💼 <b>Scrum Master:</b> Garante a aplicação correta do Scrum.</li>
+                            <li>👨‍💻 <b>Time de Desenvolvimento:</b> Executa e entrega os incrementos.</li>
+                        </ol>
+                    </div>
+                </div>
 
-                <h3>Arfetatos no SCRUM</h3>
-                <ol>
-                    <li>Product Backlog: Lista priorizada de tudo o que precisa ser desenvolvido no produto</li>
-                    <li>Sprint Backlog: Lista de tarefas que a equipe se compromete a entregar no sprint atual</li>
-                    <li>Incremento: A parte funcional e potencialidade utilizável do produto entregue ao final da sprint
-                    </li>
-                </ol>
+                <!-- Eventos no SCRUM -->
+                <div class="col-md-6 mb-4">
+                    <div class="card p-4 shadow-sm">
+                        <h2>Eventos no SCRUM</h2>
+                        <ol>
+                            <li>📅 <b>Sprint:</b> Ciclo de desenvolvimento.</li>
+                            <li>📊 <b>Planning:</b> Planejamento do sprint.</li>
+                            <li>☕ <b>Daily Scrum:</b> Reunião diária de 15 min.</li>
+                            <li>✅ <b>Review:</b> Demonstração do que foi feito.</li>
+                            <li>🔍 <b>Retrospective:</b> Reflexão e melhorias.</li>
+                        </ol>
+                    </div>
+                </div>
 
-                <h3>Benefícios do SCRUM</h3>
-                <ul>
-                    <li>Entregas mais rápidas e frequentes</li>
-                    <li>Melhor adaptação e mudanças</li>
-                    <li>Maior colaboração entre as partes envolvidas</li>
-                    <li>Foco em resultados de valor para o cliente</li>
-                </ul>
+                <!-- Artefatos no SCRUM -->
+                <div class="col-md-6 mb-4">
+                    <div class="card p-4 shadow-sm">
+                        <h2>Artefatos no SCRUM</h2>
+                        <ol>
+                            <li>🗂️ <b>Product Backlog:</b> Lista priorizada de tarefas.</li>
+                            <li>📋 <b>Sprint Backlog:</b> Tarefas comprometidas no sprint atual.</li>
+                            <li>🚀 <b>Incremento:</b> Entregável funcional ao final do sprint.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Benefícios do SCRUM -->
+                <div class="col-12">
+                    <div class="card p-4 shadow-sm text-center">
+                        <h2>🚀 Benefícios do SCRUM</h2>
+                        <p>✔️ Entregas mais rápidas e frequentes</p>
+                        <p>✔️ Melhor adaptação a mudanças</p>
+                        <p>✔️ Maior colaboração entre as partes</p>
+                        <p>✔️ Foco em resultados de valor ao cliente</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <footer>
-            <div>
-                &copy; SI0168 - UNIP - 2025
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-4 mt-5">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Seção 1: Sobre -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Sobre o SCRUM</h5>
+                        <p>SCRUM é um framework ágil que permite a entrega contínua e incremental de produtos complexos,
+                            focando em colaboração, adaptação e transparência.</p>
+                    </div>
+
+                    <!-- Seção 2: Links Úteis -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Links Úteis</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#caracteristicas" class="text-white text-decoration-none">Características do
+                                    SCRUM</a></li>
+                            <li><a href="#papeis" class="text-white text-decoration-none">Papéis no SCRUM</a></li>
+                            <li><a href="#eventos" class="text-white text-decoration-none">Eventos no SCRUM</a></li>
+                            <li><a href="#beneficios" class="text-white text-decoration-none">Benefícios do SCRUM</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Seção 3: Redes Sociais -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Nos Siga</h5>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+
+                </div>
+
+                <!-- Copyright -->
+                <div class="text-center mt-4">
+                    <p class="mb-0">&copy; 2025 Site Biográfico - SI0168 Todos os direitos reservados.</p>
+                </div>
             </div>
         </footer>
+
+        <!-- Font Awesome para os ícones -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
     </main>
 </body>
 
